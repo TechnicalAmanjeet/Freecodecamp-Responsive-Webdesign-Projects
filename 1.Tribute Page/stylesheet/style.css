@@ -1,0 +1,83 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* color: #6E6E6E;; */
+}
+
+.maincontainer{
+  width: 96vw;
+  /* height: 98vh; */
+  margin: 20px 10px;
+  background: #EEEEEE;
+  /* height: 80px; */
+  text-align: center;
+  border: 2px solid green;
+}
+
+header{
+}
+
+header h1{
+  padding: 30px 0px 15px 0px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 2.6em;
+}
+
+header p{
+  color: #6E6E6E;
+  margin-bottom: 15px;
+}
+
+/* section 1 coding starts here  */
+.firstsection{
+  width: 92vw;
+  /* display: block; */
+  text-align: center;
+   background: #FFFFFF;
+   /* border: 2px solid red; */
+   margin: 0px auto 30px auto;
+   padding: 10px 0px;
+}
+
+.firstsection img{
+  width:88vw;
+  display: block;
+  margin: auto;
+  /* border: 2px solid blue; */
+}
+
+
+.firstsection p{
+  margin: 20px auto;
+  font-size: 17px;
+  width: 85vw;
+  color: #2d2c2c;
+  /* margin-bottom: 50px; */
+}
+
+
+.section2 h1{
+  padding: 40px;
+  /* margin-top: 20px; */
+}
+
+.section2 ul{
+  text-align: left;
+  padding: 5% 18% ;
+}
+
+.section2 ul li {
+  /* line-height: 20px; */
+  padding: 10px;
+  font-size: 18px;
+  color: #2d2c2c;;
+}
+
+span{
+  font-weight: bolder;
+  font-size: 19px;
+}
+
+/* section 1 coding ends here  */

@@ -10,12 +10,22 @@
   /* height: 98vh; */
   margin: 20px 10px;
   background: #EEEEEE;
-  /* height: 80px; */
   text-align: center;
-  border: 2px solid green;
+  /* height: 80px; */
+  /* border: 2px solid green; */
 }
 
-header{
+.diloge-box{
+  margin: 20px 10px;
+  position: sticky;
+  right: 60px;
+  top: 22px;
+}
+
+.diloge-box img{
+  width: 40px;
+  /* position: sticky;
+  top: 40px; */
 }
 
 header h1{
@@ -57,6 +67,11 @@ header p{
   /* margin-bottom: 50px; */
 }
 
+.section2{
+  width: 70vw;
+  margin: auto;
+  color: #6E6E6E;
+}
 
 .section2 h1{
   padding: 40px;
@@ -72,12 +87,74 @@ header p{
   /* line-height: 20px; */
   padding: 10px;
   font-size: 18px;
-  color: #2d2c2c;;
+  /* color: #2d2c2c;; */
 }
 
 span{
   font-weight: bolder;
   font-size: 19px;
+  color: black;
 }
 
-/* section 1 coding ends here  */
+/* section 2 coding ends here  */
+
+/* last section coding */
+.lastsection{
+  width: 45vw;
+  margin: auto;
+  font-style: italic;
+  color: #6E6E6E;
+  margin-bottom: 20px;
+}
+
+
+
+/* footer section  */
+footer{
+  margin: 40px 0px;
+}
+
+
+
+/* hidden part executing from here */
+.hidden{
+  background-color: red;
+  color: #6E6E6E;
+  width: 350px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding : 40px auto;
+}
+
+.hidden .left{
+  float: left;
+  width: 48%;
+  margin-top: 10px;
+}
+
+.hidden .left h2{
+  padding: 10px;
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.hidden .right p{
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+}
+
+.hidden .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+}
+.hidden select{
+  width: 280px;
+}

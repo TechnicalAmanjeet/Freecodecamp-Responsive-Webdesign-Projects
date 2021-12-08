@@ -15,18 +15,6 @@
   /* border: 2px solid green; */
 }
 
-.diloge-box{
-  margin: 20px 10px;
-  position: sticky;
-  right: 60px;
-  top: 22px;
-}
-
-.diloge-box img{
-  width: 40px;
-  /* position: sticky;
-  top: 40px; */
-}
 
 header h1{
   padding: 30px 0px 15px 0px;
@@ -52,10 +40,11 @@ header p{
 }
 
 .firstsection img{
-  width:88vw;
-  display: block;
-  margin: auto;
-  /* border: 2px solid blue; */
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+
 }
 
 
@@ -97,6 +86,35 @@ span{
 }
 
 /* section 2 coding ends here  */
+
+/* last section coding */
+.lastsection{
+  width: 45vw;
+  margin: auto;
+  font-style: italic;
+  color: #6E6E6E;
+  margin-bottom: 20px;
+}
+
+
+
+/* footer section  */
+footer{
+  margin: 40px 0px;
+}
+
+.diloge-box{
+  margin: 20px 10px;
+  position: sticky;
+  right: 60px;
+  top: 22px;
+}
+
+.diloge-box img{
+  width: 40px;
+  /* position: sticky;
+  top: 40px; */
+}
 
 /* last section coding */
 .lastsection{

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+    width: 100vw;
+    /* height: 800vh; */
+}
+
+
+/* ******** custom coding of css starts from here ********  */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5px auto;
+    /* line-height: 20px; */
+    position: sticky;
+    top: 5px;
+    
+}
+
+header img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+header nav{
+    width: 60%;
+    /* background-color: red; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a{
+    font-size: 20px;
+    background: transparent;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+header nav a:hover{
+    background-color: black;
+    color: whitesmoke;
+    transform: scale(1.1);
+    transition: all .8s ease;
+}
+
+
+
+
+main{
+    /* height: 300px; */
+    margin-top: 100px;
+    /* background-color: rgb(138, 124, 124); */
+    /* text-align: center; */
+    font-size: 3.6vw;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main form{
+    /* width: 60%; */
+    height: 10%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    /* background-color: black; */
+}
+
+main form input{
+    height: 5vw;
+    width: 300px;
+    /* color: whitesmoke; */
+    height: 40px;
+    padding: 0 10px;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+main form .submit{
+    height: 50px;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: rgb(86, 86, 150);
+}
+
+
+
+
+
+
+
+@media (max-width:900px){
+    header img{
+        width: 40px;
+        /* padding: 2px 0; */
+    }
+
+    header nav{
+        width: 70%;
+        /* background-color: red; */
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+        width: 100%;
+    }
+    header img{
+        width: 60px;
+    }
+    header nav{
+        background: rgb(118, 214, 206);
+        flex-direction: column;
+        /* background-color: red; */
+        width: 100%;
+        font-size: 20px;
+    }
+
+    main{
+        /* background-color: blue; */
+        margin: 10px 0 0 0;
+    }
+}

@@ -23,51 +23,103 @@
     <main>
         <div class="header">
             <h1 id="title">Survay form</h1>
-            <p id="description">Thanky for filling this form</p>
+            <p id="description">Thank you for filling this form</p>
         </div>
 
         <form id="survey-form">
-            <label for="fst-name" id="name-label">First Name</label>
-            <input type="text" id="name" name="fst-name" placeholder="Enter Your first name">
+            <div class="group">
+                <label for="fst-name" id="name-label">First Name</label>
+            <input type="text" id="name" name="fst-name" placeholder="Enter Your first name" class="text">
+            </div>
+    
+            <div class="group">
+                <label for="lst-name">Last Name</label>
+            
+            <input type="text" name="lst-name" id="lst-name" placeholder="Enter Your last name" class="text">
+            </div>
+            
+            <div class="group">
+                <label for="email" id="email-label">Email</label>
+            
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" class="text">
+            </div>
+            
+            <div class="group">
+                <label for="age" id="number-label">Age</label>
+            
+            <input type="number" name="age" id="number" placeholder="Enter your age" min="10" max="10000" class="text">
+            </div>
+            
 
-            <label for="lst-name">Last Name</label>
-            <input type="text" name="lst-name" id="lst-name" placeholder="Enter Your last name">
-
-            <label for="email" id="email-label">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter Your Email">
-
-            <label for="age" id="number-label">Age</label>
-            <input type="number" name="age" id="number" placeholder="Enter your age" min="10" max="10000">
-
-            <label for="about_you">Which option best describes your current role?</label>
-            <select name="about_you" id="dropdown" aria-placeholder="Seclect current role">
-                <option value="select current role" disabled>Select current role</option>
+            <div class="group">
+                <label for="about_you">Which option best describes your current role?</label>
+            
+            <select name="about_you" id="dropdown" aria-placeholder="Seclect current role" class="text">
+                <option disabled selected value>Select current role</option>
                 <option value="student">Student</option>
                 <option value="full time job">Full time job</option>
                 <option value="full time learner">Full time Learner</option>
                 <option value="prefer not to say">Prefer not to say</option>
                 <option value="others">others</option>
             </select>
-
-            <label for="name">Would you recommend freeCodeCamp to a friend?</label>
-            <input type="radio" name="name" id="radio"> Definitely
-            <input type="radio" name="name" id="radio">
-            Maybe
-            <input type="radio" name="name" id="radio">
-
-            <label for="learn">what is you learning now?</label>
-            <input type="checkbox" name="learn" value="front-end"> Front-end Development
-            <input type="checkbox" name="learn" value="back-end"> Back-end Development
-            <input type="checkbox" name="learn" value="python"> Python
-            <input type="checkbox" name="learn" value="android"> Android 
-            <input type="checkbox" name="learn" value="data-science"> Data Science
-            <input type="checkbox" name="learn" value="ml"> Machine Learning
-            <input type="checkbox" name="learn" value="blockchain"> BlockChain Development
+            </div>
             
-            <label for="comment">Any comments or suggestions?</label>
-            <textarea name="comment" id="comment" cols="60" rows="10"></textarea>
 
-            <input type="submit" value="Submit" id="submit">
+            <div class="group">
+                <label for="name">Would you recommend freeCodeCamp to a friend?</label>
+            
+            <label>
+                <input type="radio" name="name" id="radio" value="definetely" class="btn"> Definitely
+            </label>
+            <label >
+                <input type="radio" name="name" id="radio" value="may be" class="btn">
+            Maybe
+            </label>
+            
+            <label >
+                <input type="radio" name="name" id="radio" value="not sure" class="btn"> Not Sure
+
+            </label>
+            </div>
+            
+
+            <div class="group">
+                <label for="learn">what is you learning now?</label>
+            
+            <label>
+                <input type="checkbox" name="learn" value="back-end" class="btn"> Back-end Development
+                
+            </label>
+            <label>
+                <input type="checkbox" name="learn" value="python" class="btn"> Python
+
+            </label>
+            <label>
+
+                <input type="checkbox" name="learn" value="android" class="btn"> Android 
+            </label>
+            <label>
+                <input type="checkbox" name="learn" value="data-science" class="btn"> Data Science
+
+            </label>
+            <label>
+                <input type="checkbox" name="learn" value="ml" class="btn"> Machine Learning
+
+            </label>
+            <label>
+
+                <input type="checkbox" name="learn" value="blockchain" class="btn"> BlockChain Development
+            </label>
+            </div>
+            
+            <div class="group">
+                <label for="comment">Any comments or suggestions?</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" class="text" placeholder="Any comment"></textarea>
+            </div>
+
+            <div class="group">
+                <input type="submit" value="Submit" id="submit">
+            </div>
         </form>
     </main>
 

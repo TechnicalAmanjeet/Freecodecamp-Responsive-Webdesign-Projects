@@ -1,16 +1,104 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: whitesmoke;
+    /* list-style: none; */
+    /* text-decoration: none; */
+    /* color: whitesmoke; */
     font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
+body,html{
     background-color: aquamarine;
-    width: 100vw;
+    /* width: 100vw; */
+    min-width: 290px;
 }
 
 
 /* ******** custom coding of css starts from here ********  */
+
+
+#navbar{
+    position: fixed;
+  min-width: 360px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  overflow-y: scroll;
+}
+
+main header,nav header{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+nav ul li{
+    /* margin-top: 20px; */
+    border-top: 1px solid black;
+    padding: 15px;
+    list-style: none;
+}
+
+nav ul li a{
+    padding: 0 0 0 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+
+
+
+/* coding for right section starts from here  */
+main{
+    /* 
+    max-width: 68%;
+    float: right; */
+    background-color: rgb(253, 125, 125);
+    /* background-color: #FFFFFF; */
+    position: absolute;
+    margin-left: 343px;
+    padding: 20px;
+    margin-bottom: 110px;
+    border-left: 5px solid black;
+}
+
+main .main-section p{
+    padding-left: 40px;
+    padding-right: 10px;
+    margin-bottom:25px;
+    /* overflow: scroll; */
+}
+
+main .main-section ul{
+    padding-left: 90px;
+    padding-right: 10px;
+    margin: 40px 0;
+}
+
+main .main-section ul li{
+    margin-bottom: 20px;
+}
+
+
+code {
+    display: block;
+    /* text-align: left; */
+    margin-left: 60px;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  /* responsive website code starts from here  */
+  

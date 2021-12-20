@@ -5,12 +5,246 @@
     text-decoration: none;
     color: whitesmoke;
     font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.5s ease;
 }
 
 body{
-    background-color: aquamarine;
+    /* background-color: 
+    ; */
+    background: linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./../images/pexels-photo-4974914.jpeg) center/cover fixed no-repeat;
     width: 100vw;
 }
 
 
 /* ******** custom coding of css starts from here ********  */
+
+/* nav section starts from here  */
+nav{
+    height: 70px;
+    background-color: rgb(95, 86, 86);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+nav img{
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(53, 48, 48);
+}
+
+nav ul{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+
+nav ul li{
+    padding: 7px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+nav ul li:hover , nav ul li.Active{
+    background-color: rgb(133, 89, 89);
+}
+nav ul li a:hover{
+    
+    color: orangered;
+}
+
+/* nav section done from here  */
+
+
+/* main section starts from here  */
+
+
+#welcome-section{
+    width: 100%;
+    height: 88vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section h1{
+    font-size: 6vw;
+    word-spacing: 1vw;
+}
+
+#welcome-section h1 span{
+    color: orangered;
+    font-weight: bolder;
+    font-size: 6.3vw;
+}
+
+#welcome-section p{
+    margin: 15px 0 35px 0;
+    word-spacing: 2vw;
+    font-weight: bolder;
+    font-size: 4vw;
+}
+
+
+#welcome-section .Link a{
+    font-size: 25px;
+    background-color: transparent;
+    color: blue;
+    margin: 0 10px 0 0;
+    padding: 10px 20px;
+    /* border-radius: ; */
+    color: orangered;
+    /* font-size: 20px; */
+    font-weight: bolder;
+    border: 1px solid red;
+}
+
+
+#welcome-section .Link a:hover{
+    background-color: orangered;
+    color: #FFF;
+    /* border: 1px solid transparent; */
+}
+
+
+/* main section ends from here  */
+
+
+/* project section starts from here  */
+
+#projects{
+    /* height: 100vh; */
+    width: 100vw;
+    background-color: #45567D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#projects h1{
+    /* margin:0 0 100px  0; */
+    margin: 80px 0 40px 0;
+    padding:0 10px 10px 10px;
+    text-align: center;
+    /* width: 600px; */
+    font-size: 40px;
+    font-weight: bolder;
+    border-bottom: 4px solid rgb(78, 53, 53);
+}
+
+#projects .Project{
+    display: flex;
+    justify-content: space-around;
+    /* max-width: 1000px; */
+    /* max-width: 700px; */
+    width: 96%;
+    flex-wrap: wrap;
+}
+
+#projects .project-tile span{
+    display: none;
+}
+
+#projects .project-tile:hover span{
+    display: inline-block;
+    transition: all 2s ease;
+}
+
+#projects .Project .project-tile{
+    background-color: #303841;
+    height: 320px;
+    width: 240px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#projects .Project .project-tile img{
+    width: 240px;
+    border-top-left-radius: 10px;
+}
+
+#projects .Project .project-tile p{
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+#projects a.Show_all {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0 30px 0;
+    background-color: #303841;
+}
+
+#projects a.Show_all:hover span{
+    transform: scaleX(2);
+    transition: all 1s ease ;
+}
+
+/* project section ends from here  */
+
+/* work section starts from here  */
+
+#work{
+    height: 450px;
+    width: 100%;
+    background-color: #303841;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border-bottom: 5px solid #BE3144;
+}
+
+#work h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+#work p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#work ul{
+    margin: 30px auto 40px auto;
+    /* width: 90%; */
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+#work ul li {
+    margin-right: 30px;
+}
+
+#work ul .fab{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+#Contact{
+    width: 100%;
+    background-color: #303841;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Contact p{
+    margin: 10px 0;
+}

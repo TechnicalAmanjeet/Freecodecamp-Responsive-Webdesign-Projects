@@ -1,6 +1,6 @@
      ***** what needs to do more *****
 
-
+1.) need to make website responsive in nature.
 
 
     ***** what has been completed *****
